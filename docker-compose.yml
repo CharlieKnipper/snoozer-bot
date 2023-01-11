@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  snoozer-bot:
+    build: .
+    environment:
+      - DISCORD_TOKEN=<CHANGE_TOKEN>
+      - DISCORD_GUILD=<CHANGE_GUILD>
+    volumes:
+      - ./:/usr/app/src
+    command: python /usr/app/src/snoozer.py
+    restart: unless-stopped
