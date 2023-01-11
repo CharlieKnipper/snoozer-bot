@@ -1,0 +1,2 @@
+# Ignore the .env file associated with the snoozer-bot script
+.env
